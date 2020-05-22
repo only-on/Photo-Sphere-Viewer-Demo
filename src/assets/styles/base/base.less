@@ -1,0 +1,183 @@
+@import '../variable/variable.less';
+.body{
+  margin: 20px !important;
+}
+.content {
+  padding: 20px !important;
+  background: @main-text-white !important;
+  box-shadow:0px 2px 17px 0px rgba(190,190,190,0.5) !important;
+  border-radius: 5px !important;
+}
+.tab-button {
+  vertical-align: middle !important;
+  background: @tab-button-backgroud !important;
+  height: 60px;
+  color: @main-text-white;
+}
+.default-button {
+  width: 150px;
+  height: 100% !important;
+  display: inline-block;
+  padding: 20px !important;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+}
+.checked-button {
+  background: @tab-button-checked-backgroud !important;
+}
+.pages-block {
+  margin-top: 10px !important;
+  overflow: hidden;
+  margin-left: 1px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background: @main-text-white;
+}
+.pages-right {
+  vertical-align: middle;
+}
+//路径面包屑
+.titleBar{
+  padding:15px !important;
+  background: #fff;
+  border-bottom:@border-color;
+  display: flex;
+  align-items: center;
+}
+.titleBar>div{
+  font-size: 16px;
+  color:@before-path-color
+}
+.titleBar>div>span:last-child{
+  color:@current-path-color;
+  font-weight:600;
+}
+//详情
+.detailBody{
+  margin: 20px 30px !important;
+}
+.detailContent{
+  padding-bottom: 40px !important;
+  background: @main-text-white !important;
+  box-shadow:0px 2px 17px 0px rgba(190,190,190,0.5) !important;
+  border-radius: 5px;
+}
+.itemContent{
+  padding:20px !important;
+  margin-bottom: 20px !important;
+  background: @main-text-white !important;
+  box-shadow:0px 2px 17px 0px rgba(190,190,190,0.5) !important;
+}
+.itemContent:last-child{
+  margin-bottom: 0px !important;
+}
+.detailTitle{
+  background:#F6F6F6;
+  padding: 20px !important;
+  border-bottom:1px solid @border-color;
+  font-size:16px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+//详情关闭按钮
+.closeIcon{
+  position: relative;
+  color:@before-path-color;
+  cursor: pointer;
+}
+.closeIcon:after{
+  content: '';
+  display: block;
+  width: 2px;
+  height: 35px;
+  background:@divider-color;
+  position: absolute;
+  right: -15px;
+  top:0;
+}
+//表单内容
+.formContent{
+  padding: 30px 40px !important;
+}
+.selfValidate .ivu-form-item-label:before{
+  content: '*';
+  display: inline-block;
+  margin-right: 4px;
+  line-height: 1;
+  font-family: SimSun;
+  font-size: 12px;
+  color: @notice-text-color;
+}
+//弹框按钮
+.ivu-btn-primary{
+  background: @layout-header-background !important;
+  border-color: @layout-header-background !important;
+}
+.ivu-btn-text:active{
+  color: @layout-header-background !important;
+}
+.ivu-btn-text:hover{
+  color: @layout-header-background !important;
+}
+//提示文字
+.noticeTextGray {
+  color: @notice-text-gray;
+}
+.notice{
+  color: @notice-text-color;
+  margin-left: 10px;
+  text-align: left;
+}
+
+
+.file {
+  position: relative;
+  display: inline-block;
+  background: @layout-header-background;
+  border: 1px solid @btn-background-dates-light;
+  box-shadow: 0px 2px 10px 0px rgba(183,195,255,1);
+  border-radius: 8px;
+  padding: 4px 12px !important;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  text-indent: 0;
+  line-height: 20px;
+}
+.file input {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+.file:hover {
+  background: @layout-header-background;
+  border-color: @btn-background-dates-light;
+  box-shadow: 0px 2px 10px 0px rgba(183,195,255,1);
+  color: #fff;
+  text-decoration: none;
+}
+
+.box-image{
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.mask-image {
+  width: 100px;
+  height: 100px;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  left:0px;
+  top:0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.box-image:hover .mask-image {
+  opacity: 1;
+}
